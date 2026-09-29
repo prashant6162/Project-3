@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Interactive Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span>&lt;</span>Portfolio<span>/&gt;</span>
+            </a>
+
+            <button id="menuToggle" class="menu-btn">
+                ☰
+            </button>
+
+            <ul id="navLinks" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#todo">Tasks</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeToggle" class="theme-btn">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                👋 Welcome to my portfolio
+            </p>
+
+            <h1>
+                Hi, I'm
+                <span>Your Name</span>
+            </h1>
+
+            <h2>
+                Web Developer & JavaScript Learner
+            </h2>
+
+            <p class="hero-text">
+                I create modern, responsive and interactive
+                websites using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">
+                    View Projects →
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="#" title="GitHub">GitHub</a>
+                <a href="#" title="LinkedIn">LinkedIn</a>
+                <a href="#" title="Instagram">Instagram</a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="code-window">
+
+                <div class="window-buttons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <pre><code>
+const developer = {
+    name: "Your Name",
+    skills: [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ],
+    learning: true
+};
+
+console.log("Hello World!");
+                </code></pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <div class="profile-circle">
+                    👨‍💻
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <h3>
+                    Passionate about building websites
+                </h3>
+
+                <p>
+                    I'm a web development student who enjoys
+                    creating beautiful and interactive websites.
+                    I'm currently learning JavaScript and
+                    modern web development.
+                </p>
+
+                <p id="moreText" class="hidden">
+                    I enjoy solving problems, learning new
+                    technologies and building projects that
+                    improve my programming skills.
+                </p>
+
+                <button id="moreBtn" class="btn">
+                    Read More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section skills-section">
+
+        <div class="section-title">
+            <p>WHAT I KNOW</p>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML</h3>
+                <p>Semantic and structured web pages.</p>
+
+                <div class="progress">
+                    <div style="width: 90%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <p>Responsive and modern designs.</p>
+
+                <div class="progress">
+                    <div style="width: 80%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Interactive website functionality.</p>
+
+                <div class="progress">
+                    <div style="width: 70%"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section">
+
+        <div class="section-title">
+            <p>MY WORK</p>
+            <h2>Featured Projects</h2>
+        </div>
+
+
+        <div class="slider">
+
+            <div class="slide active">
+
+                <div class="project-icon">
+                    💻
+                </div>
+
+                <div class="project-content">
+
+                    <span>PROJECT 01</span>
+
+                    <h3>
+                        Portfolio Website
+                    </h3>
+
+                    <p>
+                        A responsive portfolio website
+                        built using HTML and CSS.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="slide">
+
+                <div class="project-icon">
+                    📝
+                </div>
+
+                <div class="project-content">
+
+                    <span>PROJECT 02</span>
+
+                    <h3>
+                        To-Do Application
+                    </h3>
+
+                    <p>
+                        An interactive task manager
+                        created with JavaScript.
+                    </p>
+
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="slide">
+
+                <div class="project-icon">
+                    🌐
+                </div>
+
+                <div class="project-content">
+
+                    <span>PROJECT 03</span>
+
+                    <h3>
+                        Interactive Website
+                    </h3>
+
+                    <p>
+                        A modern website demonstrating
+                        DOM manipulation and events.
+                    </p>
+
+                    <div class="tags">
+                        <span>DOM</span>
+                        <span>Events</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="slider-buttons">
+
+                <button id="prevBtn">
+                    ← Previous
+                </button>
+
+                <button id="nextBtn">
+                    Next →
+                </button>
+
+            </div>
+
+            <div class="slide-counter">
+                <span id="slideNumber">1</span> / 3
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TODO ================= -->
+
+    <section id="todo" class="section todo-section">
+
+        <div class="section-title">
+            <p>STAY ORGANIZED</p>
+            <h2>My Task List</h2>
+        </div>
+
+        <div class="todo-container">
+
+            <div class="todo-input">
+
+                <input
+                    type="text"
+                    id="todoInput"
+                    placeholder="What do you want to do?"
+                >
+
+                <button id="addTodo">
+                    + Add Task
+                </button>
+
+            </div>
+
+            <ul id="todoList"></ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="section-title">
+            <p>LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>
+                    Have a project in mind?
+                </h3>
+
+                <p>
+                    Feel free to send me a message.
+                    I'll be happy to hear from you.
+                </p>
+
+                <div class="contact-item">
+                    📧
+                    <span>
+                        yourname@email.com
+                    </span>
+                </div>
+
+                <div class="contact-item">
+                    📍
+                    <span>
+                        India
+                    </span>
+                </div>
+
+            </div>
+
+
+            <form id="contactForm" novalidate>
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                    >
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Write your message..."
+                    ></textarea>
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn send-btn"
+                >
+                    Send Message 🚀
+                </button>
+
+                <p
+                    id="successMessage"
+                    class="success-message"
+                ></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>
+                <span>&lt;</span>Your Name<span>/&gt;</span>
+            </h3>
+
+            <p>
+                Building the web, one line of code at a time.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <p class="copyright">
+                © 2026 Your Name. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
